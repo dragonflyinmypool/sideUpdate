@@ -1,0 +1,110 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size: 152px;
+	color: black;
+	background-color: #FABF37;
+	font-weight: bold;
+	font-family: 'Lora', serif;	
+}
+h1 {	
+	font-size: 120px;
+}
+button, select {
+	border: 0px;
+	text-align: center;
+	background-color: #ffd87f;
+}
+button:focus, select:focus {
+	border: solid white 0px;
+	background-color: #007ac7;
+	color: white;
+}
+
+.grid {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	grid-template-rows: 30vh 30vh 30vh 7vh;
+    grid-template-columns: 5fr 2fr;
+	grid-template-areas: 
+    "catagoryContainer catagoryContainer"
+    "answerBox answerBox"
+    "keyboardContainer hangmanCircleContainer"
+   	"optionButtonsContainer hangmanCircleContainer"
+    ;
+}
+
+#answerBox {
+	display: flex;
+}
+#answerBox > div {
+	border: solid black 5px;
+	width: 150px;
+	height: 175px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+#keyboardContainer {
+	align-self: end;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+#keyboard{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.keyboardButton {
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	font-size: 40px;
+	border-radius: 15px;
+}
+
+.keyboardButtonFaded {
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	font-size: 30px;
+	background-color: transparent;
+	border:1px solid #9c9c9c;
+	color: #9c9c9c;
+}
+
+.optionButtonsContainer {
+    display: flex;
+    justify-self: start;
+    padding-left: 100px;
+}
+.optionButtons {
+	height: 50px;
+	width: 250px;
+	margin: 10px;
+	font-size: 30px;
+	border-radius: 15px;
+}
+#hangmanCircleContainer > img{
+	display: none;
+}
+
+.heart {
+	height: 300px;
+	width: 300px;
+}

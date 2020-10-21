@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TG2C9B6');</script>
+<!-- End Google Tag Manager -->
+	<title>Hangman Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG2C9B6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="grid">
+
+		<div id="catagoryContainer" style="grid-area:catagoryContainer; align-self: center;">
+			<h1>Guess the <span id="categoryDisplay">Country</span></h1>
+		</div>
+
+		<div id="answerBox" style="grid-area: answerBox;"></div>
+
+		<div id="keyboardContainer" style="grid-area: keyboardContainer;">
+			<div id="keyboard"></div>
+		</div>
+
+		<div class="optionButtonsContainer" style="grid-area: optionButtonsContainer;">
+									
+				<button class="optionButtons" id="newGame">New Game</button>
+				<button class="optionButtons" id="hint">Hint</button>					
+				<button class="optionButtons" id="showWord">Show Word</button>
+				<span style="padding-left:30px; padding-top: 15px; font-size: 30px;">Category:</span><select class="optionButtons" id="categorySelector"></select>		
+				<button class="optionButtons" onclick="window.location.href ='../../index.html'">Main Menu</button>
+	
+		</div>
+
+		<div id="hangmanCircleContainer" style="grid-area: hangmanCircleContainer;">
+
+			<img src="images/hangman0.png" id="hangman0" style="display: block">
+			<img src="images/hangman1.png" id="hangman1">
+			<img src="images/hangman2.png" id="hangman2">
+			<img src="images/hangman3.png" id="hangman3">
+			<img src="images/hangman4.png" id="hangman4">
+			<img src="images/hangman5.png" id="hangman5">
+			<img src="images/hangman6.png" id="hangman6">
+			<img src="images/hangman7.png" id="hangman7">
+			<img src="images/hangman8.png" id="hangman8">
+			<img src="images/hangman9.png" id="hangman9">
+			<img src="images/hangman10.png" id="hangman10">
+		</div>
+	
+	</div>
+	<script src="javaScript.js"></script>
+
+</body>
+</html>
